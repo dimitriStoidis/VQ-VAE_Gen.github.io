@@ -29,19 +29,19 @@
 
     <!--<article class="content">-->
       <section class="content__section" id="about">
-        <h2>
+        <h1 align="center">
           <a>Protecting gender and identity with disentangled speech representations</a>
-        </h2>
-          <h4>
+        </h1>
+          <h3 align="center">
               <a>Dimitrios Stoidis and Andrea Cavallaro</a>
-          </h4>
+          </h3>
 
           <h5>
               <p style="text-align:center;"> Queen Mary University of London</p>
               <p style="text-align:center;"> Centre for Intelligent Sensing</p>
 
           </h5>
-         <img src="QMlogo.png" alt="Girl in a jacket" style="width:200px;height:50px;">
+         <img src="QMlogo.png" align="center" style="width:200px;height:50px;">
           <img src="CISlogo.png" align="right" style="width:200px;height:50px;">
           <h3>
               <a> Abstract:</a>
@@ -88,10 +88,9 @@
            with dark secrets of pool and cascade but by the time it reached
                Lynde's hollow it was a quiet well conducted little stream."</i>
        </p>
-      <figure>
+      <figure style="center">
         <figcaption>Original</figcaption>
-            <audio
-                controls
+            <audio controls
                 src="103-1240-0001.wav">
                     Your browser does not support the
                     <code>audio</code> element.
@@ -227,10 +226,206 @@
 
 
 
+
+
+ <hr class="hr--large">
+          <p>Comparison of anonymised utterances with all models in this study.</p>
+      <h5>
+         Identity: 61, Gender: male
+      </h5>
+
+
+         <p>Reference transcription:<br/>
+           <i>"Will you forgive me now?"</i>
+       </p>
+
+
+
+<div id="spectrograms" >
+
+
+      <figure>
+        <figcaption>Original</figcaption>
+            <audio
+                controls
+                src="61-70968-0058_ORIGINAL.flac">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio>
+        </figure>
+    </div>
+
+    <div>
+      <figure>
+        <figcaption>VQ-VAE</figcaption>
+            <audio
+                controls
+                src="61-70968-0058_TO_61_VQ-VAE.wav">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio>
+        </figure>
+    </div>
+
+
+    <div>
+         <figure>
+        <figcaption>C-VAE</figcaption>
+            <audio
+                controls
+                src="61-70968-0058-CVAE.wav">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio>
+        </figure>
+    </div>
+
+    <div>
+         <figure>
+        <figcaption>MelGAN</figcaption>
+            <audio
+                controls
+                src="61-70968-0058-MelGAN.wav">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio>
+        </figure>
+    </div>
+
+
+    <div>
+       <figure>
+        <figcaption>TTS</figcaption>
+            <audio
+                controls
+                src="61-70968-0058-TTS.wav">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio>
+        </figure>
+    </div>
+
+
+
+
+
+
+    <ul id="parent">
+
+        <li>
+            <img src="61-70968-0058_ORIGINAL.png" width="400" height="500" align="center" >
+            <img src="61-70968-0058_TO_61_VQ-VAE.png" width="400" height="500" align="center" >
+            <img src="61-70968-0058-CVAE.png" width="400" height="500" align="center" >
+            <img src="61-70968-0058-MelGAN.png" width="400" height="500" align="center" >
+            <img src="61-70968-0058-TTS.png" width="400" height="500" align="center" >
+
+        </li>
+
+    </ul>
+                     <i>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Original&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;VQ-VAE &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;C-VAE
+              &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;MelGAN&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;TTS &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Pitch</i>
+
       </section>
 
 
 
+
+     <h5>
+         Identity: 1089, Gender: male
+      </h5>
+
+
+         <p>Reference transcription:<br/>
+           <i>"The chaos in which his ardour extinguished itself was a cold indifferent knowledge of himself"</i>
+       </p>
+
+
+
+    <div >
+
+
+      <figure>
+        <figcaption>Original</figcaption>
+            <audio
+                controls
+                src="1089-134686-0008-ORIGINAL.flac">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio>
+        </figure>
+    </div>
+
+    <div>
+      <figure>
+        <figcaption>VQ-VAE</figcaption>
+            <audio
+                controls
+                src="1089-134686-0008-VQ-VAE.wav">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio>
+        </figure>
+    </div>
+
+
+    <div>
+         <figure>
+        <figcaption>C-VAE</figcaption>
+            <audio
+                controls
+                src="1089-134686-0008-CVAE.wav">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio>
+        </figure>
+    </div>
+
+    <div>
+         <figure>
+        <figcaption>MelGAN</figcaption>
+            <audio
+                controls
+                src="1089-134686-0008-MelGAN.wav">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio>
+        </figure>
+    </div>
+
+
+    <div>
+       <figure>
+        <figcaption>TTS</figcaption>
+            <audio
+                controls
+                src="1089-134686-0008-TTS.wav">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio>
+        </figure>
+    </div>
+
+
+
+
+
+
+    <ul id="lord">
+
+        <li>
+            <img src="1089-134686-0008-ORIGINAL.png" width="400" height="500" align="center" >
+            <img src="1089-134686-0008-VQ-VAE.png" width="400" height="500" align="center" >
+            <img src="1089-134686-0008-CVAE.png" width="400" height="500" align="center" >
+            <img src="1089-134686-0008-MelGAN.png" width="400" height="500" align="center" >
+            <img src="1089-134686-0008-TTS.png" width="400" height="500" align="center" >
+
+        </li>
+
+    </ul>
+                     <i>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Original&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;VQ-VAE &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;C-VAE
+              &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;MelGAN&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;TTS &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Pitch</i>
+
+      </section>
 
 
 

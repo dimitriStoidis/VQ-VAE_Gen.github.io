@@ -28,21 +28,29 @@
     <!--</header>-->
 
     <!--<article class="content">-->
-      <section class="content__section" id="about">
+<section class="content__section" id="about" xmlns="http://www.w3.org/1999/html">
         <h1 align="center">
           <a>Protecting gender and identity with disentangled speech representations</a>
         </h1>
           <h3 align="center">
               <a>Dimitrios Stoidis and Andrea Cavallaro</a>
           </h3>
+          <h3 align="center">
+              <a> in Proceedings Interspeech 2021 </a>
+          </h3>
 
           <h5>
-              <p style="text-align:center;"> Queen Mary University of London</p>
               <p style="text-align:center;"> Centre for Intelligent Sensing</p>
+              <p style="text-align:center;"> Queen Mary University of London</p>
+
 
           </h5>
          <img src="QMlogo.png" align="center" style="width:200px;height:50px;">
-          <img src="CISlogo.png" align="right" style="width:200px;height:50px;">
+          <img src="CISlogo.png" align="right" style="width:250px;height:50px;">
+
+
+        <!--<img src="GENVAE.png" align="center" style="width:300px;height:400">-->
+
           <h3>
               <a> Abstract:</a>
           </h3>
@@ -73,7 +81,10 @@
       <p>
           We use five privacy settings to convert on target identity and gender:<br/>
 
-          Same Identity (SI), Random Identity (RI), Same Identity Random Gender (SIRG), Random Identity Same Gender (RISG), Random Gender (RG)
+          Same Identity (SI)<br/>
+          Random Identity (RI)<br/>
+          Same Identity Random Gender (SIRG)<br/> Random Identity Same Gender (RISG)<br/>
+          Random Gender (RG)
       </p>
 
 
@@ -228,201 +239,434 @@
 
 
 
- <hr class="hr--large">
-          <p>Comparison of anonymised utterances with all models in this study.</p>
-      <h5>
-         Identity: 61, Gender: male
-      </h5>
+ <!--<hr class="hr&#45;&#45;large">-->
+          <!--<p>Comparison of anonymised utterances with all models in this study.</p>-->
+      <!--<h5>-->
+         <!--Identity: 61, Gender: male-->
+      <!--</h5>-->
 
 
-         <p>Reference transcription:<br/>
-           <i>"Will you forgive me now?"</i>
-       </p>
-
-
-
-<div id="spectrograms" >
-
-
-      <figure>
-        <figcaption>Original</figcaption>
-            <audio
-                controls
-                src="61-70968-0058_ORIGINAL.flac">
-                    Your browser does not support the
-                    <code>audio</code> element.
-            </audio>
-        </figure>
-    </div>
-
-    <div>
-      <figure>
-        <figcaption>VQ-VAE</figcaption>
-            <audio
-                controls
-                src="61-70968-0058_TO_61_VQ-VAE.wav">
-                    Your browser does not support the
-                    <code>audio</code> element.
-            </audio>
-        </figure>
-    </div>
-
-
-    <div>
-         <figure>
-        <figcaption>C-VAE</figcaption>
-            <audio
-                controls
-                src="61-70968-0058-CVAE.wav">
-                    Your browser does not support the
-                    <code>audio</code> element.
-            </audio>
-        </figure>
-    </div>
-
-    <div>
-         <figure>
-        <figcaption>MelGAN</figcaption>
-            <audio
-                controls
-                src="61-70968-0058-MelGAN.wav">
-                    Your browser does not support the
-                    <code>audio</code> element.
-            </audio>
-        </figure>
-    </div>
-
-
-    <div>
-       <figure>
-        <figcaption>TTS</figcaption>
-            <audio
-                controls
-                src="61-70968-0058-TTS.wav">
-                    Your browser does not support the
-                    <code>audio</code> element.
-            </audio>
-        </figure>
-    </div>
+         <!--<p>Reference transcription:<br/>-->
+           <!--<i>"Will you forgive me now?"</i>-->
+       <!--</p>-->
 
 
 
+<!--<div id="spectrograms" >-->
 
 
+      <!--<figure>-->
+        <!--<figcaption>Original</figcaption>-->
+            <!--<audio-->
+                <!--controls-->
+                <!--src="61-70968-0058_ORIGINAL.flac">-->
+                    <!--Your browser does not support the-->
+                    <!--<code>audio</code> element.-->
+            <!--</audio>-->
+        <!--</figure>-->
+    <!--</div>-->
 
-    <ul id="parent">
-
-        <li>
-            <img src="61-70968-0058_ORIGINAL.png" width="300" height="400" align="center" >
-            <img src="61-70968-0058_TO_61_VQ-VAE.png" width="300" height="400" align="center" >
-            <img src="61-70968-0058-CVAE.png" width="300" height="400" align="center" >
-            <img src="61-70968-0058-MelGAN.png" width="300" height="400" align="center" >
-            <img src="61-70968-0058-TTS.png" width="300" height="400" align="center" >
-
-        </li>
-
-    </ul>
-     <i>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Original&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;VQ-VAE &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;C-VAE
-     &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;MelGAN&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;TTS </i>
-      </section>
-
-
-
-
-     <h5>
-         Identity: 1089, Gender: male
-      </h5>
-
-
-         <p>Reference transcription:<br/>
-           <i>"The chaos in which his ardour extinguished itself was a cold indifferent knowledge of himself"</i>
-       </p>
+    <!--<div>-->
+      <!--<figure>-->
+        <!--<figcaption>VQ-VAE</figcaption>-->
+            <!--<audio-->
+                <!--controls-->
+                <!--src="61-70968-0058_TO_61_VQ-VAE.wav">-->
+                    <!--Your browser does not support the-->
+                    <!--<code>audio</code> element.-->
+            <!--</audio>-->
+        <!--</figure>-->
+    <!--</div>-->
 
 
+    <!--<div>-->
+         <!--<figure>-->
+        <!--<figcaption>C-VAE</figcaption>-->
+            <!--<audio-->
+                <!--controls-->
+                <!--src="61-70968-0058-CVAE.wav">-->
+                    <!--Your browser does not support the-->
+                    <!--<code>audio</code> element.-->
+            <!--</audio>-->
+        <!--</figure>-->
+    <!--</div>-->
 
-    <div >
-
-
-      <figure>
-        <figcaption>Original</figcaption>
-            <audio
-                controls
-                src="1089-134686-0008-ORIGINAL.flac">
-                    Your browser does not support the
-                    <code>audio</code> element.
-            </audio>
-        </figure>
-    </div>
-
-    <div>
-      <figure>
-        <figcaption>VQ-VAE</figcaption>
-            <audio
-                controls
-                src="1089-134686-0008-VQ-VAE.wav">
-                    Your browser does not support the
-                    <code>audio</code> element.
-            </audio>
-        </figure>
-    </div>
+    <!--<div>-->
+         <!--<figure>-->
+        <!--<figcaption>MelGAN</figcaption>-->
+            <!--<audio-->
+                <!--controls-->
+                <!--src="61-70968-0058-MelGAN.wav">-->
+                    <!--Your browser does not support the-->
+                    <!--<code>audio</code> element.-->
+            <!--</audio>-->
+        <!--</figure>-->
+    <!--</div>-->
 
 
-    <div>
-         <figure>
-        <figcaption>C-VAE</figcaption>
-            <audio
-                controls
-                src="1089-134686-0008-CVAE.wav">
-                    Your browser does not support the
-                    <code>audio</code> element.
-            </audio>
-        </figure>
-    </div>
-
-    <div>
-         <figure>
-        <figcaption>MelGAN</figcaption>
-            <audio
-                controls
-                src="1089-134686-0008-MelGAN.wav">
-                    Your browser does not support the
-                    <code>audio</code> element.
-            </audio>
-        </figure>
-    </div>
-
-
-    <div>
-       <figure>
-        <figcaption>TTS</figcaption>
-            <audio
-                controls
-                src="1089-134686-0008-TTS.wav">
-                    Your browser does not support the
-                    <code>audio</code> element.
-            </audio>
-        </figure>
-    </div>
+    <!--<div>-->
+       <!--<figure>-->
+        <!--<figcaption>TTS</figcaption>-->
+            <!--<audio-->
+                <!--controls-->
+                <!--src="61-70968-0058-TTS.wav">-->
+                    <!--Your browser does not support the-->
+                    <!--<code>audio</code> element.-->
+            <!--</audio>-->
+        <!--</figure>-->
+    <!--</div>-->
 
 
 
 
 
 
-    <ul id="lord">
+    <!--<ul id="parent">-->
 
-        <li>
-            <img src="1089-134686-0008-ORIGINAL.png" width="300" height="400" align="center" >
-            <img src="1089-134686-0008-VQ-VAE.png" width="300" height="400" align="center" >
-            <img src="1089-134686-0008-CVAE.png" width="300" height="400" align="center" >
-            <img src="1089-134686-0008-MelGAN.png" width="300" height="400" align="center" >
-            <img src="1089-134686-0008-TTS.png" width="300" height="400" align="center" >
+        <!--<li>-->
+            <!--<img src="61-70968-0058_ORIGINAL.png" width="300" height="400" align="center" >-->
+            <!--<img src="61-70968-0058_TO_61_VQ-VAE.png" width="300" height="400" align="center" >-->
+            <!--<img src="61-70968-0058-CVAE.png" width="300" height="400" align="center" >-->
+            <!--<img src="61-70968-0058-MelGAN.png" width="300" height="400" align="center" >-->
+            <!--<img src="61-70968-0058-TTS.png" width="300" height="400" align="center" >-->
 
-        </li>
+        <!--</li>-->
 
-    </ul>
-     <i>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Original&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;VQ-VAE &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;C-VAE
-     &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;MelGAN&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;TTS </i>
+    <!--</ul>-->
+     <!--<i>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Original&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;VQ-VAE &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;C-VAE-->
+     <!--&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;MelGAN&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;TTS </i>-->
+      <!--</section>-->
+
+
+
+
+     <!--<h5>-->
+         <!--Identity: 1089, Gender: male-->
+      <!--</h5>-->
+
+
+         <!--<p>Reference transcription:<br/>-->
+           <!--<i>"The chaos in which his ardour extinguished itself was a cold indifferent knowledge of himself"</i>-->
+       <!--</p>-->
+
+
+ <!--<hr class="hr&#45;&#45;large">-->
+    <!--<div >-->
+
+
+      <!--<figure>-->
+        <!--<figcaption>Original</figcaption>-->
+            <!--<audio-->
+                <!--controls-->
+                <!--src="1089-134686-0008-ORIGINAL.flac">-->
+                    <!--Your browser does not support the-->
+                    <!--<code>audio</code> element.-->
+            <!--</audio>-->
+        <!--</figure>-->
+    <!--</div>-->
+
+    <!--<div>-->
+      <!--<figure>-->
+        <!--<figcaption>VQ-VAE</figcaption>-->
+            <!--<audio-->
+                <!--controls-->
+                <!--src="1089-134686-0008-VQ-VAE.wav">-->
+                    <!--Your browser does not support the-->
+                    <!--<code>audio</code> element.-->
+            <!--</audio>-->
+        <!--</figure>-->
+    <!--</div>-->
+
+
+    <!--<div>-->
+         <!--<figure>-->
+        <!--<figcaption>C-VAE</figcaption>-->
+            <!--<audio-->
+                <!--controls-->
+                <!--src="1089-134686-0008-CVAE.wav">-->
+                    <!--Your browser does not support the-->
+                    <!--<code>audio</code> element.-->
+            <!--</audio>-->
+        <!--</figure>-->
+    <!--</div>-->
+
+    <!--<div>-->
+         <!--<figure>-->
+        <!--<figcaption>MelGAN</figcaption>-->
+            <!--<audio-->
+                <!--controls-->
+                <!--src="1089-134686-0008-MelGAN.wav">-->
+                    <!--Your browser does not support the-->
+                    <!--<code>audio</code> element.-->
+            <!--</audio>-->
+        <!--</figure>-->
+    <!--</div>-->
+
+
+    <!--<div>-->
+       <!--<figure>-->
+        <!--<figcaption>TTS</figcaption>-->
+            <!--<audio-->
+                <!--controls-->
+                <!--src="1089-134686-0008-TTS.wav">-->
+                    <!--Your browser does not support the-->
+                    <!--<code>audio</code> element.-->
+            <!--</audio>-->
+        <!--</figure>-->
+    <!--</div>-->
+
+
+
+
+
+
+    <!--<ul id="lord">-->
+
+        <!--<li>-->
+            <!--<img src="1089-134686-0008-ORIGINAL.png" width="300" height="400" align="center" >-->
+            <!--<img src="1089-134686-0008-VQ-VAE.png" width="300" height="400" align="center" >-->
+            <!--<img src="1089-134686-0008-CVAE.png" width="300" height="400" align="center" >-->
+            <!--<img src="1089-134686-0008-MelGAN.png" width="300" height="400" align="center" >-->
+            <!--<img src="1089-134686-0008-TTS.png" width="300" height="400" align="center" >-->
+
+        <!--</li>-->
+
+    <!--</ul>-->
+     <!--<i>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Original&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;VQ-VAE &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;C-VAE-->
+     <!--&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;MelGAN&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;TTS </i>-->
+
+
+ <!--<hr class="hr&#45;&#45;large">-->
+
+    <!--<div>-->
+      <!--<figure>-->
+        <!--<figcaption>Original: 61-70968-0008 </figcaption>-->
+            <!--<audio-->
+                <!--controls-->
+                <!--src="61-70968-0008.wav">-->
+                    <!--Your browser does not support the-->
+                    <!--<code>audio</code> element.-->
+            <!--</audio>-->
+        <!--</figure>-->
+    <!--</div>-->
+
+
+    <!--<div>-->
+         <!--<figure>-->
+        <!--<figcaption>GenGan</figcaption>-->
+            <!--<audio-->
+                <!--controls-->
+                <!--src="61-70968-0008_GenGan.wav">-->
+                    <!--Your browser does not support the-->
+                    <!--<code>audio</code> element.-->
+            <!--</audio>-->
+        <!--</figure>-->
+    <!--</div>-->
+
+    <!--<div>-->
+         <!--<figure>-->
+        <!--<figcaption>PCMelGAN</figcaption>-->
+            <!--<audio-->
+                <!--controls-->
+                <!--src="61-70968-0008_PCMelgan.wav">-->
+                    <!--Your browser does not support the-->
+                    <!--<code>audio</code> element.-->
+            <!--</audio>-->
+        <!--</figure>-->
+    <!--</div>-->
+
+
+    <!--<div>-->
+       <!--<figure>-->
+        <!--<figcaption>121-127105-0011</figcaption>-->
+            <!--<audio-->
+                <!--controls-->
+                <!--src="121-127105-0011.wav">-->
+                    <!--Your browser does not support the-->
+                    <!--<code>audio</code> element.-->
+            <!--</audio>-->
+        <!--</figure>-->
+    <!--</div>-->
+
+    <!--<div>-->
+       <!--<figure>-->
+        <!--<figcaption>GenGan</figcaption>-->
+            <!--<audio-->
+                <!--controls-->
+                <!--src="121-127105-0011_GenGan.wav">-->
+                    <!--Your browser does not support the-->
+                    <!--<code>audio</code> element.-->
+            <!--</audio>-->
+        <!--</figure>-->
+    <!--</div>-->
+
+
+    <!--<div>-->
+       <!--<figure>-->
+        <!--<figcaption>PCMelGAN</figcaption>-->
+            <!--<audio-->
+                <!--controls-->
+                <!--src="121-127105-0011_PCMelGAN.wav">-->
+                    <!--Your browser does not support the-->
+                    <!--<code>audio</code> element.-->
+            <!--</audio>-->
+        <!--</figure>-->
+    <!--</div>-->
+
+
+    <!--<div>-->
+       <!--<figure>-->
+        <!--<figcaption>260-123286-0008</figcaption>-->
+            <!--<audio-->
+                <!--controls-->
+                <!--src="260-123286-0008.wav">-->
+                    <!--Your browser does not support the-->
+                    <!--<code>audio</code> element.-->
+            <!--</audio>-->
+        <!--</figure>-->
+    <!--</div>-->
+
+
+    <!--<div>-->
+       <!--<figure>-->
+        <!--<figcaption>GenGan</figcaption>-->
+            <!--<audio-->
+                <!--controls-->
+                <!--src="260-123286-0008_GenGan.wav">-->
+                    <!--Your browser does not support the-->
+                    <!--<code>audio</code> element.-->
+            <!--</audio>-->
+        <!--</figure>-->
+    <!--</div>-->
+
+
+    <!--<div>-->
+       <!--<figure>-->
+        <!--<figcaption>PCMelGAN</figcaption>-->
+            <!--<audio-->
+                <!--controls-->
+                <!--src="260-123286-0008_PCMelGAN.wav">-->
+                    <!--Your browser does not support the-->
+                    <!--<code>audio</code> element.-->
+            <!--</audio>-->
+        <!--</figure>-->
+    <!--</div>-->
+
+
+   <!--<div>-->
+       <!--<figure>-->
+        <!--<figcaption>4507-16021-0031</figcaption>-->
+            <!--<audio-->
+                <!--controls-->
+                <!--src="4507-16021-0031.wav">-->
+                    <!--Your browser does not support the-->
+                    <!--<code>audio</code> element.-->
+            <!--</audio>-->
+        <!--</figure>-->
+    <!--</div>-->
+
+
+    <!--<div>-->
+       <!--<figure>-->
+        <!--<figcaption>GenGan</figcaption>-->
+            <!--<audio-->
+                <!--controls-->
+                <!--src="4507-16021-0031_GenGan.wav">-->
+                    <!--Your browser does not support the-->
+                    <!--<code>audio</code> element.-->
+            <!--</audio>-->
+        <!--</figure>-->
+    <!--</div>-->
+
+
+    <!--<div>-->
+       <!--<figure>-->
+        <!--<figcaption>PCMelGAN</figcaption>-->
+            <!--<audio-->
+                <!--controls-->
+                <!--src="4507-16021-0031_PCMelGAN.wav">-->
+                    <!--Your browser does not support the-->
+                    <!--<code>audio</code> element.-->
+            <!--</audio>-->
+        <!--</figure>-->
+    <!--</div>-->
+
+
+
+   <!--<div>-->
+       <!--<figure>-->
+        <!--<figcaption>5142-33396-0063</figcaption>-->
+            <!--<audio-->
+                <!--controls-->
+                <!--src="5142-33396-0063.wav">-->
+                    <!--Your browser does not support the-->
+                    <!--<code>audio</code> element.-->
+            <!--</audio>-->
+        <!--</figure>-->
+    <!--</div>-->
+
+
+    <!--<div>-->
+       <!--<figure>-->
+        <!--<figcaption>GenGan</figcaption>-->
+            <!--<audio-->
+                <!--controls-->
+                <!--src="5142-33396-0063_GenGan.wav">-->
+                    <!--Your browser does not support the-->
+                    <!--<code>audio</code> element.-->
+            <!--</audio>-->
+        <!--</figure>-->
+    <!--</div>-->
+
+
+    <!--<div>-->
+       <!--<figure>-->
+        <!--<figcaption>PCMelGAN</figcaption>-->
+            <!--<audio-->
+                <!--controls-->
+                <!--src="5142-33396-0063_PCMelGAN.wav">-->
+                    <!--Your browser does not support the-->
+                    <!--<code>audio</code> element.-->
+            <!--</audio>-->
+        <!--</figure>-->
+    <!--</div>-->
+
+
+    <!--<ul id="lordi">-->
+
+        <!--<li>-->
+            <!--<img src="61-70968-0008.png" width="300" height="400" align="center" >-->
+            <!--<img src="61-70968-0008_GenGan.png" width="300" height="400" align="center" >-->
+            <!--<img src="61-70968-0008_PCMelgan.png" width="300" height="400" align="center" >-->
+            <!--<img src="121-127105-0011.png" width="300" height="400" align="center" >-->
+            <!--<img src="121-127105-0011_GenGan.png" width="300" height="400" align="center" >-->
+            <!--<img src="121-127105-0011_PCMelGAN.png" width="300" height="400" align="center" >-->
+            <!--<img src="260-123286-0008.png" width="300" height="400" align="center" >-->
+            <!--<img src="260-123286-0008_GenGan.png" width="300" height="400" align="center" >-->
+            <!--<img src="260-123286-0008_PCMelGAN.png" width="300" height="400" align="center" >-->
+            <!--<img src="4507-16021-0031.png" width="300" height="400" align="center" >-->
+            <!--<img src="4507-16021-0031_GenGan.png" width="300" height="400" align="center" >-->
+            <!--<img src="4507-16021-0031_PCMelGAN.png" width="300" height="400" align="center" >-->
+            <!--<img src="5142-33396-0063.png" width="300" height="400" align="center" >-->
+            <!--<img src="5142-33396-0063_GenGan.png" width="300" height="400" align="center" >-->
+            <!--<img src="5142-33396-0063_PCMelGAN.png" width="300" height="400" align="center" >-->
+
+
+
+        <!--</li>-->
+
+    <!--</ul>-->
+     <!--<i>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Original&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;VQ-VAE &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;C-VAE-->
+     <!--&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;MelGAN&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;TTS </i>-->
+    <h5>Cite as</h5>
+          <p>@inproceedings{stoidis21_interspeech<br/>
+              author={Dimitrios Stoidis and Andrea Cavallaro},<br/>
+              title={{Protecting Gender and Identity with Disentangled Speech Representations}},<br/>
+              year=2021,<br/>
+              booktitle={Proc. Interspeech 2021},<br/>
+              pages={1699--1703},<br/>
+              doi={10.21437/Interspeech.2021-2163}
+          }</p>
 
       </section>
 
